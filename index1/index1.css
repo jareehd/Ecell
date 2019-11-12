@@ -1,9 +1,19 @@
-/*Prabhav's*/
 h1
 {
 background-color:black;
 color:white;
 }
+
+.img-responsive {
+  overflow: hidden;
+}
+
+.hovereffect 
+ {     /*for the size of the image on hovering*/
+          width: 200% ;
+          height: 200%;
+          float: left;
+          overflow: visible;
 .hovereffect 
  {
           width: auto;
@@ -34,6 +44,7 @@ color:white;
         .hovereffect:hover img {
           filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
           filter: grayscale(1) blur(0px);
+          -webkit-filter: grayscale(1) blur(0px);
           -webkit-filter: grayscale(1) blur(1px);
           -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
@@ -52,6 +63,9 @@ color:white;
         .hovereffect a.info {
           display: inline-block;
           text-decoration: none;
+          padding: 7px 14px ;
+          border: 1px  solid #fff;   /**/
+          margin: 25px 0 0 0;
           padding: 7px 14px;
           border: 1px solid #fff;
           margin: 50px 0 0 0;
@@ -81,9 +95,6 @@ color:white;
           -ms-transform: scale(1);
           transform: scale(1);
         }
-/**/
-
-
 #body1{
  background-image: url("images/esummit.png");
  background-repeat:no-repeat;
@@ -141,10 +152,12 @@ color:white;
   color: #fdfdfd;
 }
 #myNavbar{
-  width:350px;
+  width:100%;
+  text-align: center;
+  font-size: 1.5rem;
   height: auto;
   position: fixed;
-  top:30px;
+  top:0px;
   right:0px;
   background-color:black;
   opacity: 0.8;
@@ -153,7 +166,7 @@ color:white;
 #close-button{
   border: none;
   background-color: transparent;
-  color:#fdfdfd
+  color:#fdfdfd;
   
 }
 a{
