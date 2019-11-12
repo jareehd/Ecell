@@ -1,4 +1,3 @@
-
 $(function() {
     AOS.init();
   });
@@ -20,5 +19,16 @@ $(document).ready(function(){
         $('#menu').addClass('hide');
         $('#myNavbar').removeClass('hide');
         $('#myNavbar').addClass('show');   
-   });
-});
+   });  
+});     
+        
+$(window).scroll(function() {
+    if ($(this).scrollTop()>500)
+     {
+        $('.arrow').hide(1000);
+     }
+    else
+     {
+      $('.arrow').show(1000);
+     }
+ });
